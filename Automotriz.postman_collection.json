@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "f5915cb3-9e8b-4e3f-ae93-2768d6d651f1",
+		"name": "Automotriz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20979992"
+	},
+	"item": [
+		{
+			"name": "Carga Inicial",
+			"item": [
+				{
+					"name": "Clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Cliente/CargaInicial",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Cliente",
+								"CargaInicial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patios",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"patNombre\": \"MoliCars\",\r\n  \"patDireccion\": \"Mariana de Jesus\",\r\n  \"patTelefono\": \"333333\",\r\n  \"patPuntoVente\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Patio/POST",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Patio",
+								"POST"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Marcas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Marca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Marca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ejecutivos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Ejecutivo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Ejecutivo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehiculo Marca Chevrolet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehPlaca\": \"ABC-111\",\r\n  \"marIdMarca\": 2,\r\n  \"vehModelo\": \"Sedan\",\r\n  \"vehNumeroChasis\": \"wqeqwe11\",\r\n  \"vehTipo\": \"S/R\",\r\n  \"vehCilindraje\": \"90cc\",\r\n  \"vehAvaluo\": 15000\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Auto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehiculo Marca Kia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehPlaca\": \"BDA-123\",\r\n  \"marIdMarca\": 1,\r\n  \"vehModelo\": \"Sedan\",\r\n  \"vehNumeroChasis\": \"sada11\",\r\n  \"vehTipo\": \"S/R\",\r\n  \"vehCilindraje\": \"100cc\",\r\n  \"vehAvaluo\": 20000\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Auto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Auto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vehiculo Marca Kia Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliIdCliente\": 1,\r\n  \"ejeIdEjecutivo\": 1,\r\n  \"vehIdVehiculo\": 1,\r\n  \"patIdPatio\": 1,\r\n  \"creMesesPlazo\": 24,\r\n  \"creCuotas\": 416,\r\n  \"creEntrada\": 10000,\r\n  \"creEstado\": \"Despachada\",\r\n  \"creObservacion\": \"Entrega de cuota entrada\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Solicitud/POST",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Solicitud",
+								"POST"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ConsultaCredito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Solicitud/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Solicitud",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
